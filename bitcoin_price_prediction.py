@@ -22,13 +22,13 @@ class volume_prediction:
         self.root.resizable(0,0)
         
         #===================adding background image=======================#
-        path_bg = "image/bg.jpg"
+        path_bg = "bg.jpg"
         self.background = ImageTk.PhotoImage(file=path_bg)
         bg = Label(self.root, image=self.background).place(x=0,y=0,relwidth=1,relheight=1)
         
         
         #===================box image=======================#
-        path_box = "image/box.jpg"
+        path_box = "box.jpg"
         self.box_image = ImageTk.PhotoImage(file=path_box)
         box = Label(self.root, image=self.box_image).place(x=740,y=35,width=400,height=550)
         
@@ -76,7 +76,7 @@ class volume_prediction:
         
         
         #============================Predict button============================#
-        self.signup_image = ImageTk.PhotoImage(file="image/predict.png")
+        self.signup_image = ImageTk.PhotoImage(file="predict.png")
         btn_signup = Button(pre_frame,image=self.signup_image,bd=0,cursor="hand2",width=130,height=37,bg="yellow",command=self.signup).place(x=300,y=405)
         
         
